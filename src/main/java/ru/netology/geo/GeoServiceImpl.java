@@ -11,7 +11,10 @@ public class GeoServiceImpl implements GeoService {
 
     /**
      * Метод определяет локацию по ip
+     * @param ip
+     * @return 
      */
+    @Override
     public Location byIp(String ip) {
         if (LOCALHOST.equals(ip)) {
             return new Location(null, null, null, 0);

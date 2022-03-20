@@ -4,6 +4,7 @@ import ru.netology.entity.Country;
 
 public class LocalizationServiceImpl implements LocalizationService {
 
+    @Override
     public String locale(Country country) {
         switch (country) {
             case RUSSIA:
